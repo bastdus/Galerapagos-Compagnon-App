@@ -1,14 +1,21 @@
 {
   "expo": {
-    "name": "galerapagos",
-    "slug": "galerapagos",
+    "name": "Galerapagos",
+    "slug": "Galerapagos",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "orientation": "landscape",
+    "icon": "./assets/icon/icon.png",
+    "backgroundColor": "#fae8c9",
+    "primaryColor": "#57B5B5",
     "splash": {
-      "image": "./assets/splash.png",
+      "backgroundColor": "#fae8c9",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "mdpi": "./assets/splash/logo.png",
+      "hdpi": "./assets/splash/logo.png",
+      "mdpi": "./assets/splash/logo.png",
+      "xhdpi": "./assets/splash/logo.png",
+      "xxhdpi": "./assets/splash/logo.png",
+      "xxxhdpi": "./assets/splash/logo.png"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -17,16 +24,42 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.galerapagos.app",
+      "supportsTablet": true,
+      "icon": "./assets/icon/icon.png",
+      "splash": {
+        "backgroundColor": "#fae8c9",
+        "resizeMode": "contain",
+        "image": "./assets/splash/logo.png"
+      }
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+      "package": "com.galerapagos.app",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "splash": {
+        "backgroundColor": "#fae8c9",
+        "resizeMode": "contain",
+        "mdpi": "./assets/splash/logo.png",
+        "hdpi": "./assets/splash/logo.png",
+        "mdpi": "./assets/splash/logo.png",
+        "xhdpi": "./assets/splash/logo.png",
+        "xxhdpi": "./assets/splash/logo.png",
+        "xxxhdpi": "./assets/splash/logo.png"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "icon": "./assets/icon/icon.png",
+      "themeColor": "#57B5B5",
+      "backgroundColor": "#fae8c9",
+      "barStyle": "black-translucent",
+      "splash": {
+        "backgroundColor": "#fae8c9",
+        "resizeMode": "contain",
+        "image": "./assets/splash/logo.png"
+      }
     }
   }
 }
